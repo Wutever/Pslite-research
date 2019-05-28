@@ -9,4 +9,4 @@ server_env.update({
  "DMLC_NUM_WORKER": "1",
  "PS_VERBOSE": "2"
  })
-subprocess.Popen("python -c 'import mxnet'", shell=True, env=server_env)
+subprocess.Popen(args = ["py","-3.6","-c","import mxnet"], shell=True, env=server_env)
